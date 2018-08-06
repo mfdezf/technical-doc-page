@@ -1,6 +1,9 @@
 @media (min-width: 1000px) {
     
     body{
+       outline: green solid 1px;
+       display: flex;
+       flex-direction: row; 
        font-family: 'Open Sans', Arial;
        margin: 0;
 
@@ -57,7 +60,10 @@
         
     }
 
-
-
+    main{
+        outline: pink solid 1px;
+        flex-grow: 1;   /*To take all avaible remaining space*/
+        /* width: 100vw; */
+    }
   }
   
