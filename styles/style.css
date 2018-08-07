@@ -65,5 +65,25 @@
         flex-grow: 1;   /*To take all avaible remaining space*/
         /* width: 100vw; */
     }
+
+    .main-section header{
+        text-align: left;
+    }
+
+    .main-section {
+        width: 70vw;
+        margin-left: 3vw;
+    }
+
+    .main-section p, ul {
+        margin-left: 1vw;
+        color: #4d4e53;
+    }
+
+    .main-section p ul, li{
+        /* outline: green solid 1px; */
+        margin-bottom: 2vh;
+    }
+
   }
   
