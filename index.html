@@ -347,13 +347,105 @@
       <section id="DATA_TYPES" class="main-section">
         
         <header>Data types</header>
+        
+        <p>The latest ECMAScript standard defines seven data types:</p>
+
+        <ul>
+          <li>Six data types that are primitives:</li>
+          
+          <ul>
+            <li>Boolean. true and false.</li>
+            <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, 
+              NULL, or any other variant..</li>
+            <li>undefined. A top-level property whose value is undefined.</li>
+            <li>Number. 42 or 3.14159.</li>
+            <li>String. "Howdy"</li>
+            <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+          </ul>
+          
+          <li>and Objects</li>
+        </ul>
+
       
       </section>
 
       <section id="IF...ELSE_STATEMENT" class="main-section">
         
         <header>if...else statement</header>
-      
+
+        <p>
+            Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement 
+            if the condition is false. An if statement looks as follows:
+        </p>
+
+        <div>
+            <code>
+                if (condition) { <br>
+                  &nbsp statement_1; <br>
+                } else { <br>
+                  &nbsp statement_2; <br>
+                }
+            </code>
+        </div> 
+
+        <p>
+            condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. 
+            If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any 
+            statement, including further nested if statements.
+        </p>
+
+        <p>
+            You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:
+        </p>
+
+        <div>
+            <code>
+                if (condition_1) { <br>
+                  &nbsp statement_1; <br>
+                } else if (condition_2) { <br>
+                  &nbsp statement_2; <br>
+                } else if (condition_n) { <br>
+                  &nbsp statement_n; <br>
+                } else { <br>
+                  &nbsp statement_last; <br>
+                } 
+            </code>
+        </div> 
+
+        <p>
+
+            In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, 
+            group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:
+
+        </p>
+
+        <div>
+            <code>
+                if (condition) { <br>
+                  &nbsp statement_1_runs_if_condition_is_true; <br>
+                  &nbsp statement_2_runs_if_condition_is_true; <br>
+                } else { <br>
+                  &nbsp statement_3_runs_if_condition_is_false; <br>
+                  &nbsp statement_4_runs_if_condition_is_false; <br>
+                } 
+            </code>
+        </div> 
+
+        <p> 
+          It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality 
+          when glancing over the code. For example, do not use the following code:
+        </p>
+
+        <div>
+            <code>
+                if (x = y) { <br>
+                &nbsp  /* statements here */ <br>
+                }
+            </code>
+        </div>
+
+        <br>
+        
       </section>
 
       <section id="WHILE_STATEMENT" class="main-section">
