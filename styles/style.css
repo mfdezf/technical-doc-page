@@ -62,6 +62,8 @@
 
     main{
         outline: pink solid 1px;
+        height: 100vh;
+        overflow: scroll;
         flex-grow: 1;   /*To take all avaible remaining space*/
         /* width: 100vw; */
     }
