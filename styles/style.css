@@ -38,7 +38,7 @@
         /* border: pink solid 1px; */
         display: flex;
         flex-direction: column;
-        height: 600px;
+        height: 100 vh/*600px*/;
         overflow-y: auto;
         overflow-x: hidden;
 
@@ -61,9 +61,10 @@
     }
 
     main{
-        outline: pink solid 1px;
+        /* outline: pink solid 1px; */
         height: 100vh;
         overflow: scroll;
+        overflow-x: hidden;
         flex-grow: 1;   /*To take all avaible remaining space*/
         /* width: 100vw; */
     }
