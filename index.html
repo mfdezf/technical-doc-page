@@ -286,6 +286,61 @@
       <section id="CONSTANTS" class="main-section">
         
         <header>Constants</header>
+        
+        <p>
+            You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a 
+            variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore 
+            characters.
+        </p>
+
+        <div>
+          <code>
+              const PI = 3.14;
+          </code>
+        </div>
+        
+        <p>
+            A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized 
+            to a value.
+        </p>
+
+        <p>
+            The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the 
+            dentifier is assumed to represent a variable.
+        </p>
+
+        <P>
+            You cannot declare a constant with the same name as a function or variable in the same scope. For example:
+        </P>
+
+        <div>
+            <code>
+                // THIS WILL CAUSE AN ERROR <br>
+                function f() {}; <br>
+                const f = 5; <br>
+                // THIS WILL CAUSE AN ERROR ALSO <br>
+                function f() { <br>
+                &nbsp const g = 5; <br>
+                &nbsp var g; <br>
+                &nbsp //statements <br>
+                }
+            </code>
+        </div>
+        
+        <br>
+        
+        <p>
+            However, object attributes are not protected, so the following statement is executed without problems.
+        </p>
+
+        <div>
+            <code>
+                const MY_OBJECT = {"key": "value"}; <br>
+                MY_OBJECT.key = "otherValue";
+            </code>
+        </div>
+
+        <br>
 
       </section>
 
