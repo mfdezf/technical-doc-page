@@ -87,5 +87,12 @@
         margin-bottom: 2vh;
     }
 
+    .main-section div{
+        /* outline: blue solid 1px; */
+        margin-left: 5vh;
+        background-color: #f7f7f7;
+        color: #4d4e53;
+    }
+
   }
   
