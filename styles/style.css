@@ -8,19 +8,6 @@
        margin: 0;
 
     }
-
-    #navbar{
-        border-right: solid;
-        border-color: rgba(0,22,22,0.4);
-        height: 100vh;
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-        height: 600px;
-        overflow-y: auto;
-        overflow-x: hidden;
-
-    }
     
     header{
         font-size: 26px;
