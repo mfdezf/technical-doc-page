@@ -320,9 +320,9 @@
                 const f = 5; <br>
                 // THIS WILL CAUSE AN ERROR ALSO <br>
                 function f() { <br>
-                &nbsp const g = 5; <br>
-                &nbsp var g; <br>
-                &nbsp //statements <br>
+                &nbsp; const g = 5; <br>
+                &nbsp; var g; <br>
+                &nbsp; //statements <br>
                 }
             </code>
         </div>
@@ -353,16 +353,18 @@
         <ul>
           <li>Six data types that are primitives:</li>
           
-          <ul>
-            <li>Boolean. true and false.</li>
-            <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, 
-              NULL, or any other variant..</li>
-            <li>undefined. A top-level property whose value is undefined.</li>
-            <li>Number. 42 or 3.14159.</li>
-            <li>String. "Howdy"</li>
-            <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
-          </ul>
-          
+          <li id="sematic-li">
+            <ul>
+                <li>Boolean. true and false.</li>
+                <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, 
+                NULL, or any other variant..</li>
+                <li>undefined. A top-level property whose value is undefined.</li>
+                <li>Number. 42 or 3.14159.</li>
+                <li>String. "Howdy"</li>
+                <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+            </ul>
+          </li>
+
           <li>and Objects</li>
         </ul>
 
@@ -381,9 +383,9 @@
         <div>
             <code>
                 if (condition) { <br>
-                  &nbsp statement_1; <br>
+                  &nbsp; statement_1; <br>
                 } else { <br>
-                  &nbsp statement_2; <br>
+                  &nbsp; statement_2; <br>
                 }
             </code>
         </div> 
@@ -401,13 +403,13 @@
         <div>
             <code>
                 if (condition_1) { <br>
-                  &nbsp statement_1; <br>
+                  &nbsp; statement_1; <br>
                 } else if (condition_2) { <br>
-                  &nbsp statement_2; <br>
+                  &nbsp; statement_2; <br>
                 } else if (condition_n) { <br>
-                  &nbsp statement_n; <br>
+                  &nbsp; statement_n; <br>
                 } else { <br>
-                  &nbsp statement_last; <br>
+                  &nbsp; statement_last; <br>
                 } 
             </code>
         </div> 
@@ -422,11 +424,11 @@
         <div>
             <code>
                 if (condition) { <br>
-                  &nbsp statement_1_runs_if_condition_is_true; <br>
-                  &nbsp statement_2_runs_if_condition_is_true; <br>
+                  &nbsp; statement_1_runs_if_condition_is_true; <br>
+                  &nbsp; statement_2_runs_if_condition_is_true; <br>
                 } else { <br>
-                  &nbsp statement_3_runs_if_condition_is_false; <br>
-                  &nbsp statement_4_runs_if_condition_is_false; <br>
+                  &nbsp; statement_3_runs_if_condition_is_false; <br>
+                  &nbsp; statement_4_runs_if_condition_is_false; <br>
                 } 
             </code>
         </div> 
@@ -439,7 +441,7 @@
         <div>
             <code>
                 if (x = y) { <br>
-                &nbsp  /* statements here */ <br>
+                &nbsp;  /* statements here */ <br>
                 }
             </code>
         </div>
@@ -459,7 +461,7 @@
         <div>
             <code>
                 while (condition) <br>
-                &nbsp statement
+                &nbsp; statement
             </code>
         </div>
         
@@ -488,9 +490,9 @@
             <code>
                 var n = 0; <br>
                 var x = 0; <br>
-                while (n < 3) { <br>
-                &nbsp n++;  <br>
-                &nbsp x += n; <br>
+                while (n &lt; 3) { <br>
+                &nbsp; n++;  <br>
+                &nbsp; x += n; <br>
                 }
             </code>
         </div>
@@ -508,7 +510,7 @@
         </ul>
 
         <p>
-            After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.
+            After completing the third pass, the condition n &lt; 3 is no longer true, so the loop terminates.
         </p>
 
       </section>
@@ -534,7 +536,7 @@
         <div>
             <code>
                 function square(number) { <br>
-                  &nbsp return number * number; <br>
+                  &nbsp; return number * number; <br>
                 }
             </code>
         </div>
